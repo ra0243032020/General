@@ -21,19 +21,19 @@ public class MainClass {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Escribe tu Edad:");
+        System.out.println("Por favor escribe tu Edad:");
         int Edad = sc.nextInt();
 
-        System.out.println("Escribe tu Nombre:");
+        System.out.println("Por favor escribe tu Nombre:");
         String Nombre = sc.next();
 
-        System.out.println("Escribe tu Sexo:");
+        System.out.println("Por favor escribe tu Sexo:");
         String Sexo = sc.next();
 
-        System.out.println("Escribe tu Peso:");
+        System.out.println("Por favor escribe tu Peso:");
         float Peso = sc.nextFloat();
 
-        System.out.println("Escribe tu Altura:");
+        System.out.println("Por favor escribe tu Altura:");
         float Altura = sc.nextFloat();
 
         Persona persona1 = new Persona(Nombre, Sexo, Peso, Altura, Edad);

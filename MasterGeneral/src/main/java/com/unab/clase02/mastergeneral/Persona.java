@@ -91,7 +91,7 @@ public class Persona {
         if (Edad >= 18) {
             return "Eres meyor de edad";
         } else {
-            return "Eres Menor de edas";
+            return "Eres Menor de edad";
 
         }
 
