@@ -1,0 +1,38 @@
+cd C:\Users\FAMILIA\Documents\GitHub\General\MasterGeneral; "JAVA_HOME=C:\\Program Files\\Java\\jdk-14" cmd /c "\"C:\\Program Files\\NetBeans-12.0\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.args=\"-classpath %classpath com.unab.clase02.mastergeneral.MainClass\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk-14\\bin\\java.exe\" -Dmaven.ext.class.path=\"C:\\Program Files\\NetBeans-12.0\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 process-classes org.codehaus.mojo:exec-maven-plugin:1.5.0:exec"
+Scanning for projects...
+
+-------------------< com.unab.clase02:MasterGeneral >-------------------
+Building MasterGeneral 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ MasterGeneral ---
+Using 'UTF-8' encoding to copy filtered resources.
+skip non existing resourceDirectory C:\Users\FAMILIA\Documents\GitHub\General\MasterGeneral\src\main\resources
+
+--- maven-compiler-plugin:3.1:compile (default-compile) @ MasterGeneral ---
+Changes detected - recompiling the module!
+Compiling 2 source files to C:\Users\FAMILIA\Documents\GitHub\General\MasterGeneral\target\classes
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ MasterGeneral ---
+Por favor escribe tu Edad:
+18
+Por favor escribe tu Nombre:
+william
+Por favor escribe tu Sexo:
+H
+Por favor escribe tu Peso:
+67
+Por favor escribe tu Altura:
+1.75
+Eres meyor de edad
+Persona{Nombre=william, Sexo=H, Peso=67.0, Altura=1.75, Edad=18}
+Eres meyor de edad
+Persona{Nombre=william, Sexo=H, Edad=18}
+Eres meyor de edad
+Persona{Nombre=william, Sexo=H, Peso=67.0, Altura=1.75, Edad=18}
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  33.446 s
+Finished at: 2020-08-29T00:21:09-03:00
+------------------------------------------------------------------------
