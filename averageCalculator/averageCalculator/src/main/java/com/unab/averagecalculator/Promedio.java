@@ -31,7 +31,7 @@ public class Promedio extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        lblLab1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -48,14 +48,16 @@ public class Promedio extends javax.swing.JFrame {
         txtestado = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         btncalcular = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setText("Laboratorio 1");
+        lblLab1.setText("Laboratorio 1");
 
         jLabel3.setText("Laboratorio 2");
 
@@ -75,6 +77,10 @@ public class Promedio extends javax.swing.JFrame {
             }
         });
 
+        txtpromedio.setEditable(false);
+
+        txtestado.setEditable(false);
+
         jLabel9.setText("El Alumno esta: ");
 
         btncalcular.setText("Calcular");
@@ -84,28 +90,28 @@ public class Promedio extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 0, 14)); // NOI18N
+        jLabel2.setText("Promediador de Clico");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel3)
+                        .addComponent(lblLab1))
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9))
+                .addGap(53, 53, 53)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel2))
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8))
-                        .addGap(66, 66, 66)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtParcial3)
                             .addComponent(txtLaboratorio3)
@@ -114,18 +120,25 @@ public class Promedio extends javax.swing.JFrame {
                             .addComponent(txtLaboratorio2)
                             .addComponent(txtParcial1)
                             .addComponent(txtLaboratorio1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btncalcular)
-                    .addComponent(txtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addComponent(btncalcular))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(32, 32, 32))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblLab1)
                     .addComponent(txtLaboratorio1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -156,7 +169,7 @@ public class Promedio extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -179,23 +192,17 @@ public class Promedio extends javax.swing.JFrame {
     }//GEN-LAST:event_txtLaboratorio1ActionPerformed
 
     private void btncalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalcularActionPerformed
-        // TODO add your handling code here:
-        int Laboratorio1 = Integer.parseInt(txtLaboratorio1.getText());
-        int Parcial1 = Integer.parseInt(txtParcial1.getText());
-        int Laboratorio2 = Integer.parseInt(txtLaboratorio2.getText());
-        int Parcial2 = Integer.parseInt(txtParcial2.getText());
-        int Laboratorio3 = Integer.parseInt(txtLaboratorio3.getText());
-        int Parcial3 = Integer.parseInt(txtParcial3.getText());
+       
+        Double Laboratorio1 = Double.parseDouble(txtLaboratorio1.getText());
+        Double Parcial1 = Double.parseDouble(txtParcial1.getText());
+        Double Laboratorio2 = Double.parseDouble(txtLaboratorio2.getText());
+        Double Parcial2 = Double.parseDouble(txtParcial2.getText());
+        Double Laboratorio3 = Double.parseDouble(txtLaboratorio3.getText());
+        Double Parcial3 = Double.parseDouble(txtParcial3.getText());
+        
+        Double r= Laboratorio1*0.4+Parcial1*0.6+Laboratorio2*0.4+Parcial2*0.6+Laboratorio3*0.4+Parcial3*0.6/3;
 
-        int Promedio = (int) ((Laboratorio1 * 0.4 + Parcial1 * 0.6) + (Laboratorio2 * 0.4 + Parcial2 * 0.6) + (Laboratorio3 * 0.4 + Parcial3 * 0.6) / 3);
-        if (Promedio >= 0 && Promedio <= 5) {
-            txtestado.setText(String.valueOf("Aprobado"));
-        } else if (Promedio >= 6 && Promedio <= 10) {
-            txtestado.setText(String.valueOf("Reprobado"));
-        } else {
-            txtestado.setText(String.valueOf("Ingresar nota del 1 al 10"));
-        }
-        txtpromedio.setText(String.valueOf(Promedio));
+       txtpromedio.setText(r.toString());
     }//GEN-LAST:event_btncalcularActionPerformed
 
     /**
@@ -245,6 +252,7 @@ public class Promedio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblLab1;
     private javax.swing.JTextField txtLaboratorio1;
     private javax.swing.JTextField txtLaboratorio2;
     private javax.swing.JTextField txtLaboratorio3;
